@@ -50,7 +50,8 @@ jobs:
           command: |
             # Your code here
             cd frontend
-            npm run build           
+            npm run build
+            exit 1           
       - save_cache:
           paths: [frontend/node_modules]
           key: frontend-build
